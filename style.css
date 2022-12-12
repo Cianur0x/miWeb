@@ -12,40 +12,64 @@
     font-family: gila;
     src: url(fonts/Gila-qZBPV.ttf);
 }
+@font-face {
+    font-family: Monserrat;
+    src: url(fonts/Montserrat-SemiBoldItalic.ttf);
+}
+@font-face {
+    font-family: FrancesBold;
+    src: url(fonts/Fraunces_144pt-BlackItalic.ttf);
+}
 body{   
     background: url(images/inicio.jpg) no-repeat center center fixed;
     background-size: cover;
     margin: 0;
 }
 
+
 .arriba{
     display: flex;
-    height: 70px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 15px;
+    font-family: Monserrat;
+    font-size: smaller;
+    
 }
-
-nav a{
+.arriba a{
+    text-decoration: none;
+    color: #1d2927;
+}
+#paginaTitle{
+    
+    color: #1d2927;
+    font-family: FrancesBold;
+    font-size: large;
+    letter-spacing: 2px;
+    align-items: flex-start;
     margin-right: 120px;
 }
-
-.logo{
-    display: flex;
+@media screen and (max-width: 740px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #paginaTitle{
+        margin-right: 10%;
+    }
 }
-
+nav a{
+    margin-right: 20px;
+}
 .logo img {
-    height: 115px;
-    margin-left: 100px;
+    height: 90px;
 
 }
 main{
     margin-bottom: 6%;
 }
-/* main section img{
-    width:325px;
-    height:185px;
-} */
+
 .titulo{
     color: #1d2927;
     font-size: 28px;
@@ -82,12 +106,12 @@ iframe{
 .foto{
     max-width: 300px;
     width: 32%;
+    
 }
 .foto img{
     width: 100%;
 }
 .fotos{
-    background-color: rgb(151, 128, 255); 
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -104,16 +128,17 @@ main section h2{
     flex-direction: column;
     align-items: center;
     column-gap: 100px;
+    
+    padding-top: 3%;
     padding-bottom: 4%;
 }
 .carrusel .masFotos{
-
     display: flex;
     flex-direction: row;
     align-items: center;
-    
-    padding-left: 28%;
     column-gap: 1%;
+    padding-left: 28%;
+    padding-top: 1%;
 }
 .carrusel img{
     width:35%;
