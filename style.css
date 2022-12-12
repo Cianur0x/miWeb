@@ -1,37 +1,108 @@
-body{
-    /* background-repeat: no-repeat;
-    /* background-position: 50px  25px; 
+@font-face {
+    font-family: fraunces;
+    src: url(fonts/Fraunces_9pt_Soft-LightItalic.ttf);
     
-    background-position: center center;
-    background-attachment: fixed;*/
+}
+@font-face {
+    font-family: light;
+    src: url(fonts/Fraunces_72pt_SuperSoft-LightItalic.ttf);
     
-    
+}
+body{   
     background: url(images/inicio.jpg) no-repeat center center fixed;
     background-size: cover;
-    font-family: sans-serif;
+    
     margin: 0;
 }
-main section img{
-    width:560px;
-    height:315px;
-}
-header{
+
+.arriba{
     display: flex;
     height: 70px;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
 }
+
 nav a{
-    
     margin-right: 120px;
 }
 
 .logo{
     display: flex;
 }
+
 .logo img {
     height: 115px;
     margin-left: 100px;
 
+}
+main{
+    margin-bottom: 8%;
+}
+/* main section img{
+    width:325px;
+    height:185px;
+} */
+.titulo{
+    color: #1d2927;
+    font-size: 28px;
+    letter-spacing:3px;
+    line-height: 42px;
+    text-align: center;
+    font-family: fraunces;
+    margin-top: 100px;
+    margin-bottom: 250px;
+}
+.ecu{
+    font-size: 15px;
+}
+.todo{
+    background-color: white;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    padding: 5%;
+}
+
+iframe{
+    max-width:  630px;
+    margin-top: 45px;
+    width: 90%;
+    height: auto;
+    aspect-ratio: 1.778;
+}
+.foto{
+    max-width: 300px;
+    width: 32%;
+}
+.foto img{
+    width: 100%;
+}
+.fotos{
+    /* background-color: rgb(151, 128, 255); */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 300px;
+    align-content: center;
+    column-gap: 1%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+main section h2{
+    text-align: center;
+    color:#1d2927;
+    font-family: fraunces;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 640px) {
+    main section h2{
+        font-size: medium;
+    }
 }
