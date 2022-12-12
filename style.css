@@ -8,10 +8,13 @@
     src: url(fonts/Fraunces_72pt_SuperSoft-LightItalic.ttf);
     
 }
+@font-face {
+    font-family: gila;
+    src: url(fonts/Gila-qZBPV.ttf);
+}
 body{   
     background: url(images/inicio.jpg) no-repeat center center fixed;
     background-size: cover;
-    
     margin: 0;
 }
 
@@ -37,7 +40,7 @@ nav a{
 
 }
 main{
-    margin-bottom: 8%;
+    margin-bottom: 6%;
 }
 /* main section img{
     width:325px;
@@ -84,15 +87,11 @@ iframe{
     width: 100%;
 }
 .fotos{
-    /* background-color: rgb(151, 128, 255); */
+    background-color: rgb(151, 128, 255); 
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 300px;
-    align-content: center;
+    flex-direction: row;
+    justify-content: center;
     column-gap: 1%;
-    padding-top: 0;
-    padding-bottom: 0;
 }
 main section h2{
     text-align: center;
@@ -100,7 +99,37 @@ main section h2{
     font-family: fraunces;
     letter-spacing: 1px;
 }
+.carrusel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 100px;
+    padding-bottom: 4%;
+}
+.carrusel .masFotos{
 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    padding-left: 28%;
+    column-gap: 1%;
+}
+.carrusel img{
+    width:35%;
+    height:15%;
+}
+
+.carrusel .masFotos img{
+    width:11%;
+    height:5%;
+
+}
+footer{
+    padding-left: 20%;
+    font-family: gila;
+    letter-spacing:2px;
+}
 @media screen and (max-width: 640px) {
     main section h2{
         font-size: medium;
