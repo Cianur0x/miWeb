@@ -1,27 +1,21 @@
 @font-face {
     font-family: fraunces;
-    src: url(fonts/Fraunces_9pt_Soft-LightItalic.ttf);
-    
-}
-@font-face {
-    font-family: light;
-    src: url(fonts/Fraunces_72pt_SuperSoft-LightItalic.ttf);
-    
+    src: url(/fonts/Fraunces_9pt_Soft-LightItalic.ttf);
 }
 @font-face {
     font-family: gila;
-    src: url(fonts/Gila-qZBPV.ttf);
+    src: url(/fonts/Gila-qZBPV.ttf);
 }
 @font-face {
     font-family: Monserrat;
-    src: url(fonts/Montserrat-SemiBoldItalic.ttf);
+    src: url(/fonts/Montserrat-SemiBoldItalic.ttf);
 }
 @font-face {
     font-family: FrancesBold;
-    src: url(fonts/Fraunces_144pt-BlackItalic.ttf);
+    src: url(/fonts/Fraunces_144pt-BlackItalic.ttf);
 }
 body{   
-    background: url(images/inicio.jpg) no-repeat center center fixed;
+    background: url(/images/inicio.jpg) no-repeat center center fixed;
     background-size: cover;
     margin: 0;
 }
