@@ -112,10 +112,9 @@ li a:hover {
         font-size: 14px;
     }
     h1 {
-        border: red solid 1px;
         font-size: 60px;
-        /* poner un margin bottom pq se como la letra snif */
     }
+
 }
 
 @media (max-width: 952px) {
@@ -147,7 +146,9 @@ li a:hover {
         text-align: center;
         transition: all .5s;
     }
-
+    nav ul{
+        background-color: white;   
+    }
     nav ul li {
         display: block;
         margin: 50px 0;
@@ -167,6 +168,9 @@ li a:hover {
 
     #check:checked~ul {
         left: 0;
+    }
+    main section h2 {
+        font-size: medium;
     }
 }
 
@@ -224,7 +228,7 @@ main section h2 {
 }
 
 /* Responsive del título de la página */
-@media screen and (max-width: 640px) {
+/* @media screen and (max-width: 640px) {
     main section h2 {
         font-size: medium;
     }
@@ -232,7 +236,7 @@ main section h2 {
     .titulo {
         margin-bottom: 230px;
     }
-}
+} */
 
 /* CONTENIDO PRINCIPAL DE LA PÁGINA */
 .todo {
