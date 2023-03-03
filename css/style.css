@@ -19,6 +19,7 @@
     src: url(../fonts/Fraunces_144pt-BlackItalic.ttf);
 }
 
+/* ESPECIFICACIONES GENERALES */
 * {
     padding: 0;
     margin: 0;
@@ -33,6 +34,7 @@ body {
     margin: 0;
 }
 
+/* NAV */
 nav {
     padding-right: 100px;
     height: 80px;
@@ -59,6 +61,7 @@ nav {
     letter-spacing: 2px;
 }
 
+/* MENÚ */
 nav ul {
     float: right;
     margin-right: 20px;
@@ -74,7 +77,6 @@ nav ul li {
 nav ul li a {
     color: #1d2927;
     font-size: 15px;
-    /*14px*/
     padding: 7px 11px;
     border-bottom: 3px;
 }
@@ -101,8 +103,7 @@ li a:hover {
     display: none;
 }
 
-
-/* menu desplegable */
+/** MENÚ DESPLEGABLE **/
 nav ul ul {
     display: none;
     position: absolute;
@@ -143,7 +144,6 @@ main section h2 {
 .titulo {
     color: #1d2927;
     font-size: 35px;
-    /* 28px*/
     letter-spacing: 3px;
     line-height: 42px;
     text-align: center;
@@ -154,7 +154,6 @@ main section h2 {
 
 .ecu {
     font-size: 18px;
-    /* 16px*/
 }
 
 /* CONTENIDO PRINCIPAL DE LA PÁGINA */
@@ -235,7 +234,7 @@ footer {
     letter-spacing: 2px;
 }
 
-@media (max-width: 952px) {
+@media (max-width: 950px) {
     .enlace {
         padding-left: 20px;
     }
@@ -261,6 +260,31 @@ footer {
         padding-right: 0;
     }
 
+    li a.hover,
+    li a.active {
+        background: none;
+        color: #1d2927;
+    }
+
+    nav ul {
+        background-color: white;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        color: black;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
     #paginaTitle {
         margin-left: 100px;
         font-size: 16px;
@@ -284,31 +308,6 @@ footer {
         left: -100%;
         text-align: center;
         transition: all .5s;
-    }
-
-    nav ul {
-        background-color: white;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-
-    nav ul li a {
-        font-size: 20px;
-        color: black;
-    }
-
-    li a.hover,
-    li a.active {
-        background: none;
-        color: #1d2927;
-    }
-
-    #check:checked~ul {
-        left: 0;
     }
 
     main section h2 {
