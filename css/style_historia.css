@@ -126,20 +126,35 @@ nav ul li:hover>ul {
 }
 
 /**** MAIN ****/
-main {
-    margin-bottom: 4%;
-    background-color: white;
-}
-
 h1 {
     padding-bottom: 3.5%;
 }
 
-main section h2 {
-    text-align: center;
-    color: #1d2927;
-    font-family: fraunces;
-    letter-spacing: 1px;
+main {
+    margin-bottom: 4%;
+    background-color: white;
+    padding: 2% 10%;
+
+}
+
+main section {
+    overflow: hidden;
+}
+
+main section p {
+    float: right;
+    width: 75%;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 30px;
+}
+
+main section div p {
+    float: left;
+}
+
+.apartado {
+    float: left;
+    width: 15%;
 }
 
 .titulo {
