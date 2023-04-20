@@ -51,6 +51,17 @@ nav {
     height: 80px;
 }
 
+.enlace2 {
+    clear: right;
+    float: right;
+    margin-top: -2.5%;
+}
+
+.user {
+    top: -100%;
+    height: 60px;
+}
+
 #paginaTitle {
     position: absolute;
     margin-top: 20px;
@@ -64,7 +75,7 @@ nav {
 /* MENÚ */
 nav ul {
     float: right;
-    margin-right: 20px;
+    margin-right: 100px;
     background-color: rgba(240, 255, 255, 0.849);
 }
 
