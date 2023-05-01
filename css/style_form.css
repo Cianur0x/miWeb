@@ -1,120 +1,113 @@
 /** FUENTES DE LA PÁGINA **/
 @font-face {
-    font-family: fraunces;
-    src: url(../fonts/Fraunces_9pt_Soft-LightItalic.ttf);
-  }
-  
-  @font-face {
-    font-family: gila;
-    src: url(../fonts/Gila-qZBPV.ttf);
-  }
-  
-  @font-face {
-    font-family: Monserrat;
-    src: url(../fonts/Montserrat-SemiBoldItalic.ttf);
-  }
-  
-  @font-face {
-    font-family: FrancesBold;
-    src: url(../fonts/Fraunces_144pt-BlackItalic.ttf);
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body,
-  html {
-    height: 100%;
-  }
-  
-  .enlace {
-    position: absolute;
-  }
-  
-  #logo {
-    float: right;
-    margin-left: 130px;
-    height: 80px;
-  }
-  
-  .bgImage {
-    /* The image used */
-    background-image: url("../images/inicio.jpg");
-  
-    /* Add the blur effect */
-    filter: blur(5px);
-  
-    /* Full height */
-    height: 100%;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .form-registro {
-    width: 400px;
-    height: 600px;
-    background: #004671;
-    /*box-shadow: 7px 13px 37px #393939;*/
-    padding: 20px 30px;
-    color: white;
-    border-radius: 31px;
-    font-family: 'Poltawski Nowy', serif;
-  
-    /** centarlo **/
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .form-registro h5 {
-    margin: 0;
-    text-align: center;
-    height: 50px;
-    margin-bottom: 30px;
-    margin-top: 80px;
-    border-bottom: 1px solid;
-    font-size: 28px;
-  }
-  
-  .controls {
-    width: 100%;
-    border: 2px solid #bce5ff;
-    margin-bottom: 15px;
-    padding: 11px 10px;
-    background: rgb(255, 255, 255);
-    font-size: 14px;
-    font-weight: bold;
-  }
-  
-  .buttons {
-    margin-top: 20px;
-    width: 100%;
-    height: 40px;
-    background: #57a1ce;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 16px;
-  }
-  
-  .form-registro p {
-    height: 40px;
-    text-align: center;
-    border-bottom: 1px solid;
-  }
-  
-  .form-registro a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  .form-registro a:hover {
-    text-decoration: underline;
-  }
+  font-family: fraunces;
+  src: url(../fonts/Fraunces_9pt_Soft-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: gila;
+  src: url(../fonts/Gila-qZBPV.ttf);
+}
+
+@font-face {
+  font-family: Monserrat;
+  src: url(../fonts/Montserrat-SemiBoldItalic.ttf);
+}
+
+@font-face {
+  font-family: FrancesBold;
+  src: url(../fonts/Fraunces_144pt-BlackItalic.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.enlace {
+  position: absolute;
+}
+
+#logo {
+  float: right;
+  margin-left: 130px;
+  height: 80px;
+}
+
+.bgImage {
+  background-image: url("../images/inicio.jpg");
+  filter: blur(5px);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+form {
+  width: 400px;
+  height: 600px;
+  background: #004671;
+  /*box-shadow: 7px 13px 37px #393939;*/
+  padding: 20px 30px;
+  color: white;
+  border-radius: 31px;
+  font-family: 'Poltawski Nowy', serif;
+
+  /** centarlo **/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form h5 {
+  margin: 0;
+  text-align: center;
+  height: 50px;
+  margin-bottom: 30px;
+  margin-top: 80px;
+  border-bottom: 1px solid;
+  font-size: 28px;
+}
+
+.controls {
+  width: 100%;
+  border: 2px solid #bce5ff;
+  margin-bottom: 15px;
+  padding: 11px 10px;
+  background: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.buttons {
+  margin-top: 20px;
+  width: 100%;
+  height: 40px;
+  background: #57a1ce;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+form p {
+  height: 40px;
+  text-align: center;
+  border-bottom: 1px solid;
+}
+
+form a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
