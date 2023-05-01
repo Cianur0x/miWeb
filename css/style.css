@@ -51,21 +51,31 @@ nav {
     height: 80px;
 }
 
-.enlace2 {
-    text-align: center;
+.login {
     clear: right;
     float: right;
-    margin-top: -2.85%;
-    background: white;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    display: flex;
+    height: 52.5px;
+    width: 170px;
+    background-color: rgba(240, 255, 255, 0.849);
+    margin-top: -5.7vh;
+    margin-right: -8.5vh;
+    padding-top: 6px;
+    border-left: #1d2927 2px solid;
+}
+
+#loginText {
+    padding-left: 10px;
+    padding-top: 11px;
+    color: #1d2927;
 }
 
 .user {
+    float: left;
+    padding-left: 10px;
     margin-top: 5px;
     top: -100%;
-    height: 45px;
+    height: 34px;
 }
 
 #paginaTitle {
