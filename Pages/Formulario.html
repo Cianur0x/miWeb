@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style_form.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@1,600&display=swap" rel="stylesheet">
@@ -29,15 +30,15 @@
         <label for="password">Contraseña</label>
         <input class="controls" type="password" name="contrasena" value="" placeholder="Contraseña"
             pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[a-zA-Z\d#$@!%&*?]{8,16}" required>
-        <input class="controls" type="password" name="contrasena" value="" placeholder="Confirmar Contraseña"
-            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[a-zA-Z\d#$@!%&*?]{8,16}" required>
+        <input class="controls" type="password" name="contrasena" value="" placeholder="Confirmar Contraseña" required>
         <!-- asAB12$% Asdf&1234%Ghjk -->
 
         <input type="checkbox" id="acepto" required />
         <label for="acepto">Acepto las condiciones de uso.</label>
         <input class="buttons" type="submit" name="" value="Registarse">
     </form>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+    
 </body>
 
 </html>
