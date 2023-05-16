@@ -28,6 +28,11 @@
 body,
 html {
   height: 100%;
+  background-image: url("../images/inicio.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .enlace {
@@ -40,14 +45,6 @@ html {
   height: 80px;
 }
 
-.bgImage {
-  background-image: url("../images/inicio.jpg");
-  filter: blur(5px);
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 form {
   width: 400px;
@@ -96,12 +93,6 @@ form h5 {
   margin-bottom: 16px;
 }
 
-form p {
-  height: 40px;
-  text-align: center;
-  border-bottom: 1px solid;
-}
-
 form a {
   color: white;
   text-decoration: none;
@@ -111,4 +102,3 @@ form a {
 form a:hover {
   text-decoration: underline;
 }
-

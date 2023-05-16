@@ -11,20 +11,25 @@
 </head>
 
 <body>
-    <div class="bgImage">
-
-    </div>
-    <section class="form-login">
+    <form>
         <a href="../index.html" class="enlace">
             <img src="../images/logo.png" alt="" id="logo">
         </a>
         <h5>Galápagos</h5>
-        <input class="controls" type="text" name="usuario" value="" placeholder="Usuario">
-        <input class="controls" type="password" name="contrasena" value="" placeholder="Contraseña">
-        <input class="buttons" type="submit" name="" value="Ingresar">
-        <a href="#">¿Olvidastes tu Contraseña?</a>
+        <label for="user">Usuario</label>
+        <input class="controls" type="text" id="user" name="user" placeholder="Usuario" required>
 
-    </section>
+        <label for="pass">Contraseña</label>
+        <input class="controls" type="password" id="pass" name="pass" placeholder="Contraseña"
+            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[a-zA-Z\d#$@!%&*?]{8,16}" required>
+        <input class="form-submit-button" type="submit" value="Iniciar Sesión">
+        <div>
+            <a href="#">¿Olvidastes tu contraseña?</a>
+        <a href="../Pages/FormRegistro.html">Registrarse</a>
+        </div>
+        
+    </form>
 
 </body>
+
 </html>
