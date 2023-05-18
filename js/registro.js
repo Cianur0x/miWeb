@@ -7,8 +7,8 @@ function validarFormulario() {
     if (user === "" || email === "" || password === "" || password2 === "") {
       Swal.fire({
         icon: 'error',
-        title: 'Oops...',
-        text: 'Rellena los campos'
+        title: 'Error...',
+        text: 'Rellena los campos vacíos'
       })
       return false;
     }
@@ -17,8 +17,8 @@ function validarFormulario() {
       
       Swal.fire({
         icon: 'error',
-        title: 'Oops...',
-        text: 'Something went wrong!'
+        title: 'Error...',
+        text: 'Las contraseñas no conciden!'
       })
 
       return false;
