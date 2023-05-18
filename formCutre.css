@@ -73,6 +73,16 @@ form h5 {
     font-size: 28px;
 }
 
+.controls {
+    width: 100%;
+    border: 2px solid #bce5ff;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: bold;
+}
+
 input:focus:invalid {
     background: url(../miWeb/images/cancelar.png) no-repeat 98% center white;
 }
