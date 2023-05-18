@@ -1,0 +1,86 @@
+/** FUENTES DE LA PÁGINA **/
+@font-face {
+    font-family: fraunces;
+    src: url(../fonts/Fraunces_9pt_Soft-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: gila;
+    src: url(../fonts/Gila-qZBPV.ttf);
+}
+
+@font-face {
+    font-family: Monserrat;
+    src: url(../fonts/Montserrat-SemiBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: FrancesBold;
+    src: url(../fonts/Fraunces_144pt-BlackItalic.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    background-image: url("../miWeb/images/galapagos-beach.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.enlace {
+    position: absolute;
+}
+
+#logo {
+    float: right;
+    margin-left: 130px;
+    height: 80px;
+}
+
+
+form {
+    width: 400px;
+    height: 600px;
+    background: #004671;
+    /*box-shadow: 7px 13px 37px #393939;*/
+    padding: 20px 30px;
+    color: white;
+    border-radius: 31px;
+    font-family: 'Poltawski Nowy', serif;
+
+    /** centarlo **/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form h5 {
+    margin: 0;
+    text-align: center;
+    height: 50px;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    border-bottom: 1px solid;
+    font-size: 28px;
+}
+
+input:focus:invalid {
+    background: url(../miWeb/images/cancelar.png) no-repeat 98% center white;
+}
+
+input:focus:valid {
+    background: url(../miWeb/images/comprobado.png) no-repeat 98% center white;
+}
+
+input:focus:valid:not(#enviar) {
+    background: url(../miWeb/images/comprobado.png) no-repeat 98% center white;
+}
