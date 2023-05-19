@@ -3,6 +3,7 @@ function validarFormulario() {
     var email = document.getElementById("email").value;
     var password = document.getElementById("pass").value;
     var password2 = document.getElementById("pass2").value;
+    var terminos = document.getElementById("acepto").checked;
 
     if (user === "" || email === "" || password === "" || password2 === "") {
       Swal.fire({

@@ -82,24 +82,21 @@ form h5 {
     font-size: 14px;
     font-weight: bold;
 }
-.boton{
-  margin-top: 20px;
-  width: 100%;
-  height: 40px;
-  background: #57a1ce;
-  border: none;
-  cursor: pointer;
-  margin-bottom: 16px;
+
+.boton {
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    background: #57a1ce;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 16px;
 }
 
 input:focus:invalid {
     background: url(../images/cancelar.png) no-repeat 98% center white;
 }
 
-input:focus:valid {
+.controls:focus:valid {
     background: url(../images/comprobado.png) no-repeat 98% center white;
-}
-
-input:focus:valid:not(.enviar) {
-    background: url(../images/comprobado.png) no-repeat 98% center ;
 }

@@ -34,12 +34,14 @@
     <label for="pass">Contraseña</label>
     <input class="controls" type="password" id="pass" placeholder="Contraseña"
       pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[a-zA-Z\d#$@!%&*?]{8,16}" required>
-    <input class="controls" type="password" id="pass2" placeholder="Confirmar Contraseña" required>
+
+    <input class="controls" type="password" id="pass2" placeholder="Confirmar Contraseña"
+      pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[a-zA-Z\d#$@!%&*?]{8,16}" required>
     <!-- asAB12$% Asdf&1234%Ghjk -->
     <input type="checkbox" id="acepto" required />
     <label for="acepto">Acepto las condiciones de uso.</label>
 
-    <input class="boton" type="submit" class="enviar" value="Enviar" />
+    <input class="boton" type="submit" class="enviar" value="Enviar" onclick="validarFormulario()" />
 
   </form>
 </body>
