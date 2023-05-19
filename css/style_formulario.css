@@ -33,6 +33,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    color: rgb(127, 255, 212);
 }
 
 .enlace {
@@ -93,6 +94,9 @@ form h5 {
     margin-bottom: 16px;
 }
 
+.boton:active{
+    background-color: red;
+}
 input:focus:invalid {
     background: url(../images/cancelar.png) no-repeat 98% center white;
 }

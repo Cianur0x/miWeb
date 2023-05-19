@@ -11,7 +11,7 @@ function validarFormulario() {
         title: 'Error...',
         text: 'Rellena los campos vacíos'
       })
-      return false;
+      // return false;
     }
 
     if (password2 != password) {
@@ -22,11 +22,26 @@ function validarFormulario() {
         text: 'Las contraseñas no conciden!'
       })
 
-      return false;
     }
   
-    
+    if(terminos != true){
+
+      Swal.fire({
+        title: 'Custom width, padding, color, background.',
+        width: 600,
+        padding: '3em',
+        color: '#fff',
+        background: '#004671 url(/images/trees.png)',
+        backdrop: `
+          
+          url("/images/nyan-cat.gif")
+          left top
+          no-repeat
+        `
+      })
+
+    }
   
-    return true; // Si todos los campos son válidos, enviar el formulario
+    // return true; // Si todos los campos son válidos, enviar el formulario
   }
   
