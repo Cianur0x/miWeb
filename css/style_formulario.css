@@ -19,6 +19,7 @@
     src: url(../fonts/Fraunces_144pt-BlackItalic.ttf);
 }
 
+/* ESPECIFICACIONES GENERALES */
 * {
     margin: 0;
     padding: 0;
@@ -35,17 +36,7 @@ html {
     background-size: cover;
 }
 
-.enlace {
-    position: absolute;
-}
-
-#logo {
-    float: right;
-    margin-left: 130px;
-    height: 80px;
-}
-
-
+/** FORMULARIO **/
 form {
     width: 400px;
     height: fit-content;
@@ -62,6 +53,17 @@ form {
     transform: translate(-50%, -50%);
 }
 
+/** CABECERA FORMULARIO **/
+.enlace {
+    position: absolute;
+}
+
+#logo {
+    float: right;
+    margin-left: 130px;
+    height: 80px;
+}
+
 form h5 {
     margin: 0;
     text-align: center;
@@ -72,6 +74,7 @@ form h5 {
     font-size: 28px;
 }
 
+/** INPUTS **/
 .controls {
     width: 100%;
     border: 2px solid black;
@@ -82,6 +85,15 @@ form h5 {
     font-weight: bold;
 }
 
+input:focus:invalid {
+    background: url(../images/cancelar.png) no-repeat 98% center white;
+}
+
+.controls:focus:valid {
+    background: url(../images/comprobado.png) no-repeat 98% center white;
+}
+
+/** SPAN CONTRASEÑA NO VALIDO **/
 span.noValido {
     display: none;
     position: relative;
@@ -102,6 +114,7 @@ input[type="checkbox"] {
     accent-color: #001497;
 }
 
+/** ENLACE POLITICA PRIV. **/
 #priv {
     text-decoration-color: black;
 }
@@ -114,6 +127,7 @@ input[type="checkbox"] {
     color: black;
 }
 
+/** BOTÓN REGISTRO **/
 .boton {
     margin-top: 20px;
     width: 100%;
@@ -128,6 +142,7 @@ input[type="checkbox"] {
     color: white;
 }
 
+/* ANIMACION BOTÓN REGISTRO */
 .boton:hover {
     background-color: rgba(0, 0, 0, 0.692);
     color: white;
@@ -138,6 +153,7 @@ input[type="checkbox"] {
     color: white;
 }
 
+/* ESTILO ENLACE */
 #inicioSesion {
     position: relative;
     left: 90px;
@@ -147,12 +163,4 @@ input[type="checkbox"] {
 
 #inicioSesion:hover {
     text-decoration: underline;
-}
-
-input:focus:invalid {
-    background: url(../images/cancelar.png) no-repeat 98% center white;
-}
-
-.controls:focus:valid {
-    background: url(../images/comprobado.png) no-repeat 98% center white;
 }

@@ -19,6 +19,7 @@
   src: url(../fonts/Fraunces_144pt-BlackItalic.ttf);
 }
 
+/* ESPECIFICACIONES GENERALES */
 * {
   margin: 0;
   padding: 0;
@@ -35,16 +36,7 @@ html {
   background-size: cover;
 }
 
-.enlace {
-  position: absolute;
-}
-
-#logo {
-  float: right;
-  margin-left: 130px;
-  height: 80px;
-}
-
+/** FORMULARIO **/
 form {
   width: 400px;
   height: 460px;
@@ -60,6 +52,17 @@ form {
   transform: translate(-50%, -50%);
 }
 
+/** CABECERA FORMULARIO **/
+.enlace {
+  position: absolute;
+}
+
+#logo {
+  float: right;
+  margin-left: 130px;
+  height: 80px;
+}
+
 form h5 {
   margin: 0;
   text-align: center;
@@ -70,6 +73,7 @@ form h5 {
   font-size: 28px;
 }
 
+/** INPUTS **/
 .controls {
   width: 100%;
   border: 2px solid black;
@@ -80,6 +84,7 @@ form h5 {
   font-weight: bold;
 }
 
+/** BOTÓN INICIO SESIÓN **/
 .form-submit-button {
   margin-top: 10px;
   width: 100%;
@@ -105,6 +110,7 @@ form h5 {
   color: white;
 }
 
+/** ENLACE A REGISTRO Y RESTUARAR CONTRASEÑA **/
 form div {
   display: flex;
   flex-direction: row;
