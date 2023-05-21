@@ -48,9 +48,9 @@ html {
 form {
   width: 400px;
   height: 460px;
-  background: #004671;
+  background: white;
   padding: 20px 30px;
-  color: white;
+  color: black;
   border-radius: 31px;
   font-family: 'Poltawski Nowy', serif;
   /** centarlo **/
@@ -72,7 +72,7 @@ form h5 {
 
 .controls {
   width: 100%;
-  border: 2px solid #bce5ff;
+  border: 2px solid black;
   margin-bottom: 15px;
   padding: 11px 10px;
   background: rgb(255, 255, 255);
@@ -84,7 +84,8 @@ form h5 {
   margin-top: 10px;
   width: 100%;
   height: 40px;
-  background: #57a1ce;
+  background: black;
+  color: white;
   border: none;
   cursor: pointer;
   text-shadow: none;
@@ -95,10 +96,13 @@ form h5 {
 }
 
 .form-submit-button:hover {
-  background: #016ABC;
-  color: #fff;
-  border: 1px solid #eee;
-  
+  background-color: rgba(0, 0, 0, 0.692);
+  color: white;
+}
+
+.form-submit-button:active {
+  background-color: rgba(0, 0, 0, 0.472);
+  color: white;
 }
 
 form div {
@@ -108,7 +112,7 @@ form div {
 }
 
 form a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 14px;
 }
