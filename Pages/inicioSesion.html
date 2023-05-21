@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Formulario Login</title>
+    <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="../css/style_login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <form novalidate>
+    <form novalidate autocomplete="off">
         <a href="../index.html" class="enlace">
             <img src="../images/logo.png" alt="" id="logo">
         </a>
@@ -25,11 +25,9 @@
         <input class="form-submit-button" type="submit" value="Iniciar Sesión" onclick="return validarFormulario()">
         <div>
             <a href="#">¿Olvidastes tu contraseña?</a>
-        <a href="../Pages/form_registro.html">Registrarse</a>
+            <a href="../Pages/form_registro.html">Registrarse</a>
         </div>
-        
     </form>
-
 </body>
 
 </html>
