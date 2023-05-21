@@ -6,43 +6,32 @@ function validarFormulario() {
   var terminos = document.getElementById("acepto").checked;
 
   if (user === "" || email === "" || password === "" || password2 === "") {
-
     Swal.fire({
       icon: "error",
       title: "Error...",
       text: "Rellene los campos vacíos.",
     });
-
   } else if (password2 != password) {
-
     Swal.fire({
       icon: "error",
       title: "Error...",
       text: "Las contraseñas no conciden!",
     });
-
   } else if (terminos != true) {
-
     Swal.fire({
       title: "Acepte los terminos de uso",
       width: 600,
       padding: "3em",
       color: "#fff",
-      background: "#004671 url(/images/trees.png)",
-      backdrop: `
-          url("/images/nyan-cat.gif")
-          left top
-          no-repeat
-        `,
+      background: "#004671",
     });
-
   } else {
     var usuarioJS = {
       usuario: user,
       correo: email,
-      pass: password,
-      pass2: password2,
-      terminosCheck: terminos,
+      password: password,
+      password2: password2,
+      terminosAceptados: terminos,
     };
 
     var stringJSON = JSON.stringify(usuarioJS);
@@ -54,5 +43,4 @@ function validarFormulario() {
     document.getElementById("formulario").reset();
   }
 
-  // Si todos los campos son válidos, enviar el formulario
 }
